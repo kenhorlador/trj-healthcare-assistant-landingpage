@@ -1,5 +1,6 @@
-# Trojan Healthcare Assistant Frontend Website
-A simple frontend website acts as a digital healthcare assistant. The project utilizes HTML5, CSS3, and SCSS.
+# Trojan Digital Healthcare Assistant Landing Page
+A simple landing page that acts as a digital healthcare assistant. 
+> The project utilizes HTML5, CSS3, and SCSS.
 
 You can clone the reposity using ->
 ```bash
