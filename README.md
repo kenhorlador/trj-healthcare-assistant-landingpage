@@ -7,4 +7,4 @@ $git clone https://github.com/kenhorlador/trj-healthcare-assistant-frontend-webs
 ```
 
 Be aware of the conditions stated in the license. 
-That's all! Happy Coding! (Actually, there's no fun fixing bugs all day ;<< so 'Happy debugging' may suit the best in this case)
+That's all. Happy Coding! 
