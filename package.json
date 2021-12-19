@@ -1,0 +1,11 @@
+{
+  "name": "trojan-digital-healthcare-assistant",
+  "version": "1.0.0",
+  "description": "A healthcare assistant website to consult patients digitally in anywhere of the world 24/7",
+  "main": "script.js",
+  "author": "Ken Horlador",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
