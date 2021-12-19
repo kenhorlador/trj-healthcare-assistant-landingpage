@@ -1,0 +1,12 @@
+$primary-text: #3A3A3A;
+$secondary-text: white;
+$gray-text: #8F8F8F;
+$active-text: #FFFF00;
+
+$primary-bg: #3E34CD;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

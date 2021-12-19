@@ -1,0 +1,57 @@
+main {
+  @include flexCenter;
+  flex-direction: column;
+}
+
+.services {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 auto;
+  
+
+  h3 {
+    color: $primary-text;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 25px;
+  }
+
+  p {
+    color: $gray-text;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .services-list {
+      @include flexCenter;
+      width: 250px;
+      height: 250px;
+      background-color: $primary-bg;
+      border-radius: 30px;
+      cursor: pointer;
+      outline: 1px solid white;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 50px 15px rgba($primary-bg,0.2);
+      }
+      
+      h4 {
+        font-size: 2.5rem;
+        color: $secondary-text;
+        font-weight: 500;
+        width: 224px;
+        text-align: center;
+      }
+    }
+  }
+}

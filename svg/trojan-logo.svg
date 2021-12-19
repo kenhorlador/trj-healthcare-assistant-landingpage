@@ -1,0 +1,11 @@
+<svg id="trojan-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="100" viewBox="0 0 90 100">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.086" y1="0.799" x2="0.915" y2="0.146" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ec9007"/>
+      <stop offset="1" stop-color="#ffe013"/>
+    </linearGradient>
+  </defs>
+  <rect id="logo" width="90" height="100" fill="none"/>
+  <path id="Path_1" data-name="Path 1" d="M248.87,266.588a16.011,16.011,0,0,0-26.633,10.538l-5.346,61.385a16.011,16.011,0,0,0,21.842,16.277l51.246-20.278a16.011,16.011,0,0,0,4.791-26.815l-45.9-41.107Z" transform="translate(-213.152 -258.049)" fill="#ffd100" fill-rule="evenodd"/>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="26.347" cy="26.347" r="26.347" transform="translate(22.372 14.769)" fill="url(#linear-gradient)"/>
+</svg>

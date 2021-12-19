@@ -1,0 +1,140 @@
+header {
+  background: linear-gradient(to right, rgba($primary-bg,0.8), rgba($primary-bg, 0.8)),
+              url(../../img/hush-naidoo-jade-photography-yo01Z-9HQAw-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $secondary-text;
+    padding: 0 0 20px 0;
+
+    .header-list {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+
+      .logo {
+        height: 47px;
+        width: 52px;
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+
+        .logo-main-text {
+          font-size: 2.7rem;
+          color: $secondary-text;
+        }
+
+        .logo-secondary-text {
+          color: $secondary-text;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .nav-item {
+        font-size: 1.6rem;
+        padding: 7px 12px;
+        border-radius: 9px;
+        
+        &:hover {
+          background-color: rgba($secondary-text, .15);
+          color: $active-text;
+        }
+      }
+    }
+  }
+
+  .header-content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+    .header-content {
+      color: $secondary-text;
+      
+      .main-message {
+        margin-top: 25px;
+        font-size: 6rem;
+        width: 646px;
+        line-height: 60px;
+      }
+      .support-message {
+        font-size: 2.5rem;
+        margin-top: 15px;
+        font-weight: 500;
+        width: 545px;
+        color: #DEDEDE;
+        margin-bottom: 30px;
+      }
+
+      .cta {
+        font-size: 2.1rem;
+        padding: 8px 17px;
+        border: 2px solid white;
+        border-radius: 66px;
+        
+        &:hover {
+          background-color: $secondary-text;
+          color: $primary-bg;
+        }
+      }
+
+      .notif-container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 650px;
+        height: 111px;
+        background-color: white;
+        padding: 10px 15px;
+        align-items: center;
+        border-radius: 26px;
+
+
+        .patients-served, .time-available {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 0 10px;
+        }
+
+        .patients-served h1, .time-available h1 {
+          color: $primary-text;
+          font-weight: 700;
+          font-size: 5.5rem;
+        }
+        .patients-served p, .time-available p {
+          color: $gray-text;
+          font-weight: 600;
+          font-size: 2.5rem;
+          width: 75px;
+        }
+
+        .time-available {
+          border-left: 1px solid $primary-text;
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+
+    .trojan-monitor {
+      height: 500px;
+      width: 500px;
+      overflow: hidden;
+    }
+  }
+  
+}
