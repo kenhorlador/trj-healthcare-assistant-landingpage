@@ -1,0 +1,80 @@
+.footer-section {
+  background: $footer-bg;
+  color: $secondary-text;
+  padding: 5.7rem 5vw;
+  @include flex-wrap;
+  
+  &-left {
+
+    margin-right: 20rem;
+    
+    &-social {
+      margin-bottom: 9.2rem;
+
+      > img {
+        cursor: pointer;
+        height: 38px;
+        width: 38px;
+
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+    
+    > p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin: 1.8rem 0;
+    }
+
+    .footer-list {
+      @include flex;
+      cursor: pointer;
+
+      .logo {
+        height: 47px;
+        width: 52px;
+      }
+
+      .logo-text {
+        @include flex-fd-c;
+
+        .logo-main-text {
+          font-size: 2.7rem;
+          color: $secondary-text;
+        }
+
+        .logo-secondary-text {
+          color: $secondary-text;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+
+  .footer-section-right {
+
+    &-furtherinfo {
+      margin-top: 3.7rem;
+    }
+
+    &-services h4,  &-furtherinfo h4 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      color: $secondary-text;
+    }
+
+    &-services p, &-furtherinfo p {
+      color: $inactive-text;
+      font-size: 1.6rem;  
+      margin: 1.8rem 0;
+      cursor: pointer;
+    }
+  }
+}

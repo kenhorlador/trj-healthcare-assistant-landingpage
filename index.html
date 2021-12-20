@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="/style/dist/style.css">
 </head>
 <body>
+
+  <!-- Services -->
+
   <header>
     <nav>
       <div class="header-list">
@@ -21,19 +24,21 @@
           <p class="logo-secondary-text">Healthcare Assistant</p>
         </div>
       </div>
-      <ul class="nav-list">
-        <li><a class="nav-item" href="#services">Services</a></li>
+
+      <ul class="nav-list hide-for-mobile">
         <li><a class="nav-item" href="#about">About</a></li>
-        <li><a class="nav-item" href="#contact">Contact</a></li>
+        <li><a class="nav-item" href="#services">Services</a></li>
+        <li><a class="nav-item" href="#goal">Goal</a></li>
       </ul>
+
     </nav>
 
-    <div class="header-content-container">
+    <div class="header" id="about">
       <div class="header-content">
-        <h1 class="main-message">Serving your health needs is our main priority.</h1>
-        <h4 class="support-message">There's nothing more important than your good health, because that's our principal capital asset for your good future.</h4>
-        <a class="cta" href="#contact">Message us now</a>
-        <div class="notif-container">
+        <h1 class="header-content-main-message">Serving your health needs is our main priority.</h1>
+        <h4 class="header-content-support-message">There's nothing more important than your good health, because that's our principal capital asset for your good future.</h4>
+        <a class="header-content-cta" href="#contact">Message us now</a>
+        <div class="header-content-notif-container">
           <div class="patients-served">
             <h1>12,000+</h1>
             <p>patients served</p>
@@ -44,11 +49,16 @@
           </div>
         </div>
       </div>
-      <img class="trojan-monitor" src="/img/pix-medium.png" alt="trojan monitor">
+      <img class="header-monitor" src="/img/pix-medium.png" alt="trojan monitor">
     </div>
   </header>
+
+  <!-- Main -->
   <main>
-    <section id="services" class="services">
+
+    <!-- Services Section -->
+
+    <section class="services" id="services">
       <h3>Health Services For You</h3>
       <p>We always here to listen</p>
       <div class="services-container">
@@ -78,10 +88,74 @@
         </div>
       </div>
     </section>
-    <section class="vision-section">
-      <img src="" alt="">
-      <div></div>
+
+    <!-- Vision Section -->
+
+    <section class="goal-section" id="goal">
+      <img class="logo" src="/svg/trojan-logo.svg" alt="Logo">
+      
+      <div class="goal-section-container">
+
+        <!-- Vision -->
+        <h1 class="goal-section-vision-title">VISION</h1>
+        <p class="goal-section-vision-subtitle">
+          Electronic Consultation<br>brought to you by the<br>generous and kind team<br>of doctors.
+        </p>
+        <p class="goal-section-vision-text">
+          Harness the power of technology<br>to bring the healthcare assistant<br>that the patient needs for any<br>place and time.
+        </p>
+        <a class="goal-section-vision-cta">Learn More</a>
+      
+        <!-- Mission -->
+        <h1 class="goal-section-mission-title">MISSION</h1>
+        <p class="goal-section-mission-subtitle">
+          Electronic Consultation<br>brought to you by the<br>generous and kind team<br>of doctors.
+        </p>
+        <a class="goal-section-mission-cta">Message us now</a>
+      </div>
     </section>
+
   </main>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <!-- Left -->
+    <div class="footer-section-left">
+      <div class="footer-list">
+        <img class="logo" src="svg/trojan-logo.svg" alt="Trojan Logo">
+        <div class="logo-text">
+          <h1 class="logo-main-text">TROJAN</h1>
+          <p class="logo-secondary-text">Healthcare Assistant</p>
+        </div>
+      </div>
+      
+      <p>We are ready to hear anything from you<br>because serving your health needs is our<br>main priority.</p>
+
+      <!-- Logos -->
+      <div class="footer-section-left-social">
+        <img src="/svg/fb-logo-white.svg" alt="Facebook">
+        <img src="/svg/instagram-logo-white.svg" alt="Instagram">
+        <img src="/svg/twitter-logo-white.svg" alt="Twitter">
+      </div>
+
+    </div>
+    
+    <!-- Right -->
+    <div class="footer-section-right">
+      <div class="footer-section-right-services">
+        <h4>Services</h4>
+        <p>Buy Medicine</p>
+        <p>Covid 19 Test</p>
+        <p>Consultation</p>
+        <p>Check up</p>
+      </div>
+      <div class="footer-section-right-furtherinfo">
+        <h4>Further Information</h4>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

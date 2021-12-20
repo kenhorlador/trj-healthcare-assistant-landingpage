@@ -44,7 +44,7 @@ header nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid white;
-  padding: 0 0 20px 0;
+  padding: 15px 0;
 }
 
 header nav .header-list {
@@ -55,6 +55,7 @@ header nav .header-list {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0 5vw;
   cursor: pointer;
 }
 
@@ -90,7 +91,7 @@ header nav .nav-list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  margin: 0 2vw;
 }
 
 header nav .nav-list .nav-item {
@@ -104,7 +105,7 @@ header nav .nav-list .nav-item:hover {
   color: #FFFF00;
 }
 
-header .header-content-container {
+header .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,145 +116,134 @@ header .header-content-container {
       flex-wrap: wrap-reverse;
 }
 
-header .header-content-container .header-content {
+header .header-content {
   color: white;
+  margin: 0 5vw;
 }
 
-header .header-content-container .header-content .main-message {
-  margin-top: 25px;
-  font-size: 6rem;
-  width: 646px;
-  line-height: 60px;
+header .header-content-main-message {
+  margin-top: 75px;
+  font-size: 3.5rem;
+  width: 45rem;
 }
 
-header .header-content-container .header-content .support-message {
-  font-size: 2.5rem;
+header .header-content-support-message {
+  font-size: 2rem;
   margin-top: 15px;
   font-weight: 500;
-  width: 545px;
+  width: 33.5rem;
   color: #DEDEDE;
   margin-bottom: 30px;
 }
 
-header .header-content-container .header-content .cta {
-  font-size: 2.1rem;
-  padding: 8px 17px;
+header .header-content-cta {
+  font-size: 1.6rem;
+  padding: 13px 27px;
   border: 2px solid white;
   border-radius: 66px;
 }
 
-header .header-content-container .header-content .cta:hover {
+header .header-content-cta:hover {
   background-color: white;
   color: #3E34CD;
 }
 
-header .header-content-container .header-content .notif-container {
-  margin-top: 30px;
+header .header-content-notif-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 650px;
-  height: 111px;
-  background-color: white;
-  padding: 10px 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 26px;
+  margin: 50px 0 75px 0;
+  width: 40rem;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-header .header-content-container .header-content .notif-container .patients-served, header .header-content-container .header-content .notif-container .time-available {
+header .header-content-notif-container .patients-served, header .header-content-notif-container .time-available {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0 10px;
 }
 
-header .header-content-container .header-content .notif-container .patients-served h1, header .header-content-container .header-content .notif-container .time-available h1 {
+header .header-content-notif-container .patients-served h1, header .header-content-notif-container .time-available h1 {
   color: #3A3A3A;
   font-weight: 700;
-  font-size: 5.5rem;
+  font-size: 2.5rem;
 }
 
-header .header-content-container .header-content .notif-container .patients-served p, header .header-content-container .header-content .notif-container .time-available p {
+header .header-content-notif-container .patients-served p, header .header-content-notif-container .time-available p {
   color: #8F8F8F;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 1rem;
   width: 75px;
+  margin: auto 0;
 }
 
-header .header-content-container .header-content .notif-container .time-available {
+header .header-content-notif-container .time-available {
   border-left: 1px solid #3A3A3A;
   padding: 0 0 0 10px;
 }
 
-header .header-content-container .trojan-monitor {
+header .header-monitor {
   height: 500px;
   width: 500px;
   overflow: hidden;
+  margin: 0 1vw;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 .services {
   width: 100vw;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 0 auto;
+  text-align: center;
 }
 
 .services h3 {
   color: #3A3A3A;
-  font-weight: 700;
   font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 auto;
   margin-top: 25px;
+  width: 80vw;
 }
 
 .services p {
   color: #8F8F8F;
   font-weight: 300;
   font-size: 1.6rem;
+  margin: 0 auto;
   margin-bottom: 25px;
+  width: 80vw;
 }
 
 .services-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 15px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 0 5px;
+  width: 90vw;
+  margin: 0 auto 21px auto;
 }
 
 .services-container .services-list {
@@ -266,12 +256,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 250px;
   height: 250px;
   background-color: #3E34CD;
-  border-radius: 30px;
+  border: 1px solid white;
+  border-radius: 15px;
   cursor: pointer;
-  outline: 1px solid white;
 }
 
 .services-container .services-list:hover {
@@ -289,13 +278,156 @@ main {
   text-align: center;
 }
 
-.vision-section {
-  height: 100vh;
-  width: 100vw;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(62, 52, 205, 0.8)), to(rgba(62, 52, 205, 0.8))), url(/img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
-  background: linear-gradient(to right, rgba(62, 52, 205, 0.8), rgba(62, 52, 205, 0.8)), url(/img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
-  background-repeat: no-repeat;
+.goal-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(62, 52, 205, 0.8)), to(rgba(62, 52, 205, 0.8))), url("/img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg");
+  background-image: linear-gradient(to right, rgba(62, 52, 205, 0.8), rgba(62, 52, 205, 0.8)), url("/img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  padding: 50px 126px 50px 0;
+  color: white;
+}
+
+.goal-section-container {
+  margin-left: 5vw;
+}
+
+.goal-section .logo {
+  width: 51.1rem;
+  height: 56.8rem;
+  margin: 0 0 0 0;
+}
+
+.goal-section-mission-title {
+  margin-top: 6.1rem;
+}
+
+.goal-section-vision-title, .goal-section-mission-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.goal-section-vision-subtitle, .goal-section-mission-subtitle {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.goal-section-vision-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.goal-section-mission-subtitle {
+  margin-bottom: 3rem;
+}
+
+.goal-section-vision-cta, .goal-section-mission-cta {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 12px 49px;
+  border: 1px solid white;
+  border-radius: 6.6rem;
+  cursor: pointer;
+}
+
+.goal-section-vision-cta:hover, .goal-section-mission-cta:hover {
+  background-color: white;
+  color: #3E34CD;
+}
+
+.footer-section {
+  background: #332B9E;
+  color: white;
+  padding: 5.7rem 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-section-left {
+  margin-right: 20rem;
+}
+
+.footer-section-left-social {
+  margin-bottom: 9.2rem;
+}
+
+.footer-section-left-social > img {
+  cursor: pointer;
+  height: 38px;
+  width: 38px;
+}
+
+.footer-section-left-social > img:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer-section-left-social > img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.footer-section-left > p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.8rem 0;
+}
+
+.footer-section-left .footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.footer-section-left .footer-list .logo {
+  height: 47px;
+  width: 52px;
+}
+
+.footer-section-left .footer-list .logo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-section-left .footer-list .logo-text .logo-main-text {
+  font-size: 2.7rem;
+  color: white;
+}
+
+.footer-section-left .footer-list .logo-text .logo-secondary-text {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.footer-section .footer-section-right-furtherinfo {
+  margin-top: 3.7rem;
+}
+
+.footer-section .footer-section-right-services h4, .footer-section .footer-section-right-furtherinfo h4 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.footer-section .footer-section-right-services p, .footer-section .footer-section-right-furtherinfo p {
+  color: #D1D1D1;
+  font-size: 1.6rem;
+  margin: 1.8rem 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
